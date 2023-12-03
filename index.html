@@ -5,48 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
+    font-family: 'Arial', sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #343541;
+}
 
-        .link-container {
-            text-align: center;
-        }
+.link-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto; 
+}
 
-        .project-btn {
-            display: block;
-            width: 100%;
-            margin: 10px 0;
-            padding: 15px;
-            text-decoration: none;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            background-color: #3498db;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-        }
+.project-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 550px;
+    width: 700px;
+    margin-bottom: 10px; /* Add space between projects */
+}
 
-        .project-btn:hover {
-            background-color: #2980b9;
-        }
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.project-card:hover .project-overlay {
+    transform: translateY(0);
+}
+
+.project-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.store-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px; /* Adjust the spacing as needed */
+}
+
+.store-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.store-icon:hover {
+    background-color: #3498db;
+}
+
+
+
+
     </style>
-    <title>My Projects</title>
+    <title>Your Linktree</title>
 </head>
 <body>
     <div class="link-container">
-        <a href="https://play.google.com/store/apps/details?id=com.haztech.medica_reminder.medica_reminder" target="_blank" class="project-btn">MedicaReminder</a>
-        <a href="https://play.google.com/store/apps/details?id=com.ptcp.app.wandermate" target="_blank" class="project-btn">WanderMate</a>
-        <a href="https://play.google.com/store/apps/details?id=com.thedreamcenter.alfred" target="_blank" class="project-btn">Alfred AI</a>
-        <a href="https://play.google.com/store/apps/details?id=com.chatgeniuspro.ai" target="_blank" class="project-btn">Chat Genius Pro</a>
-        <a href="https://play.google.com/store/apps/details?id=com.techorama.storybot" target="_blank" class="project-btn">Storybot AI</a>
-        
+        <div class="project-card" style="background-image: url('images/alfred.png');">
+            <div class="project-overlay">
+                <div class="project-name">Alfred AI</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.thedreamcenter.alfred" target="_blank" class="store-icon">
+                        <img src="images/play_store.png" alt="Play Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                    <a href="https://naseerkham.me" target="_blank" class="store-icon">
+                        <img src="images/app_store.png" alt="App Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more project cards as needed --> 
+    </div>
+
+    <div class="link-container">
+        <div class="project-card" style="background-image: url('images/alfred.png');">
+            <div class="project-overlay">
+                <div class="project-name">Second Project</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.example.second_project" target="_blank" class="store-icon">
+                        <img src="images/play_store.png" alt="Play Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                    <a href="https://naseerkham.me" target="_blank" class="store-icon">
+                        <img src="images/app_store.png" alt="App Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="link-container">
+        <div class="project-card" style="background-image: url('images/alfred.png');">
+            <div class="project-overlay">
+                <div class="project-name">Alfred AI</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.thedreamcenter.alfred" target="_blank" class="store-icon">
+                        <img src="images/play_store.png" alt="Play Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                    <a href="https://naseerkham.me" target="_blank" class="store-icon">
+                        <img src="images/app_store.png" alt="App Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more project cards as needed --> 
+    </div>
+
+    <div class="link-container">
+        <div class="project-card" style="background-image: url('images/alfred.png');">
+            <div class="project-overlay">
+                <div class="project-name">Second Project</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.example.second_project" target="_blank" class="store-icon">
+                        <img src="images/play_store.png" alt="Play Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                    <a href="https://naseerkham.me" target="_blank" class="store-icon">
+                        <img src="images/app_store.png" alt="App Store Icon" style="width: 100%; height: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
