@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -146,24 +147,103 @@
         }
 
         @keyframes loading {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Force exactly 3 columns for the My AI Applications section on larger screens */
+        @media (min-width: 769px) {
+            .link-container.ai-apps {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     </style>
     <title>Muhammad Naseer - AI & Mobile Applications</title>
 </head>
+
 <body>
     <h1>My AI Applications</h1>
 
-    <div class="link-container">
+    <div class="link-container ai-apps">
         <div class="project-card" style="background-image: url('images/dairy.png');">
             <div class="project-overlay">
                 <div class="project-name">Daiary: Your Book with AI</div>
                 <div class="store-icons">
-                    <a href="https://play.google.com/store/apps/details?id=com.victor.dairy" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                    <a href="https://play.google.com/store/apps/details?id=com.victor.dairy" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
                         <img src="images/play_store.png" alt="Play Store Icon">
                     </a>
-                    <a href="https://apps.apple.com/us/app/daiary-book/id6475233413" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                    <a href="https://apps.apple.com/us/app/daiary-book/id6475233413" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                        <img src="images/app_store.png" alt="App Store Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('images/dairy.png');">
+            <div class="project-overlay">
+                <div class="project-name">kluk- Your clothes with AI</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.victor.cluq" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                        <img src="images/play_store.png" alt="Play Store Icon">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/kluk-your-clothes-with-ai/id6752724286" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                        <img src="images/app_store.png" alt="App Store Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('images/dairy.png');">
+            <div class="project-overlay">
+                <div class="project-name">Mint AI</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.victor.mint" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                        <img src="images/play_store.png" alt="Play Store Icon">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/mint-ai/id6745750368" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                        <img src="images/app_store.png" alt="App Store Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('images/dairy.png');">
+            <div class="project-overlay">
+                <div class="project-name">BukBuk- Ideas to audiobooks</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.victor.bukbuk" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                        <img src="images/play_store.png" alt="Play Store Icon">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/bukbuk-ideas-to-audiobooks/id6745130037" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                        <img src="images/app_store.png" alt="App Store Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('images/dairy.png');">
+            <div class="project-overlay">
+                <div class="project-name">Sapere- Learn in minutes</div>
+                <div class="store-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.victor.sapere" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                        <img src="images/play_store.png" alt="Play Store Icon">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/sapere-learn-in-minutes/id6746458440" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
                         <img src="images/app_store.png" alt="App Store Icon">
                     </a>
                 </div>
@@ -174,7 +254,9 @@
             <div class="project-overlay">
                 <div class="project-name">Storybot AI Bedtime Stories</div>
                 <div class="store-icons">
-                    <a href="https://play.google.com/store/apps/details?id=com.techorama.storybot&hl=en&gl=US" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                    <a href="https://play.google.com/store/apps/details?id=com.techorama.storybot&hl=en&gl=US"
+                        target="_blank" rel="noopener noreferrer" class="store-icon"
+                        aria-label="Download from Play Store">
                         <img src="images/play_store.png" alt="Play Store Icon">
                     </a>
                     <a href="#" class="store-icon" aria-label="Coming soon to App Store">
@@ -188,7 +270,8 @@
             <div class="project-overlay">
                 <div class="project-name">Chat Genius Pro</div>
                 <div class="store-icons">
-                    <a href="https://play.google.com/store/apps/details?id=com.chatgeniuspro.ai" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                    <a href="https://play.google.com/store/apps/details?id=com.chatgeniuspro.ai" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
                         <img src="images/play_store.png" alt="Play Store Icon">
                     </a>
                     <a href="#" class="store-icon" aria-label="Coming soon to App Store">
@@ -202,10 +285,12 @@
             <div class="project-overlay">
                 <div class="project-name">Alfred AI</div>
                 <div class="store-icons">
-                    <a href="https://play.google.com/store/apps/details?id=com.thedreamcenter.alfred" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                    <a href="https://play.google.com/store/apps/details?id=com.thedreamcenter.alfred" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
                         <img src="images/play_store.png" alt="Play Store Icon">
                     </a>
-                    <a href="https://apps.apple.com/us/app/alfred-ai-business-assistant/id6462440500" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                    <a href="https://apps.apple.com/us/app/alfred-ai-business-assistant/id6462440500" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
                         <img src="images/app_store.png" alt="App Store Icon">
                     </a>
                 </div>
@@ -220,43 +305,69 @@
             <div class="project-overlay">
                 <div class="project-name">MedicaReminder - Pill Reminder</div>
                 <div class="store-icons">
-                    <a href="https://play.google.com/store/apps/details?id=com.haztech.medica_reminder.medica_reminder" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                    <a href="https://play.google.com/store/apps/details?id=com.haztech.medica_reminder.medica_reminder"
+                        target="_blank" rel="noopener noreferrer" class="store-icon"
+                        aria-label="Download from Play Store">
                         <img src="images/play_store.png" alt="Play Store Icon">
                     </a>
-                    <a href="https://apps.apple.com/pk/app/medica-reminder/id6444548820" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                    <a href="https://apps.apple.com/pk/app/medica-reminder/id6444548820" target="_blank"
+                        rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
                         <img src="images/app_store.png" alt="App Store Icon">
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="project-card" style="background-image: url('images/xver.png');">
-            <div class="project-overlay">
-                <div class="project-name">XVER IO</div>
-                <div class="store-icons">
-                    <a href="https://play.google.com/store/apps/details?id=io.xver.app" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
-                        <img src="images/play_store.png" alt="Play Store Icon">
-                    </a>
-                    <a href="#" class="store-icon" aria-label="Coming soon to App Store">
-                        <img src="images/app_store.png" alt="App Store Icon">
-                    </a>
+        <div class="link-container">
+            <div class="project-card" style="background-image: url('images/medica.png');">
+                <div class="project-overlay">
+                    <div class="project-name">Drop- Member discount reward</div>
+                    <div class="store-icons">
+                        <a href=""
+                            target="_blank" rel="noopener noreferrer" class="store-icon"
+                            aria-label="Download from Play Store">
+                            <img src="images/play_store.png" alt="Play Store Icon">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/drop-member-discount-reward/id6742413272" target="_blank"
+                            rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                            <img src="images/app_store.png" alt="App Store Icon">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project-card" style="background-image: url('images/wander.png');">
-            <div class="project-overlay">
-                <div class="project-name">Wandermate</div>
-                <div class="store-icons">
-                    <a href="https://play.google.com/store/apps/details?id=com.ptcp.app.wandermate&hl=en_US" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
-                        <img src="images/play_store.png" alt="Play Store Icon">
-                    </a>
-                    <a href="https://apps.apple.com/pk/app/wandermate/id6445848589" target="_blank" rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
-                        <img src="images/app_store.png" alt="App Store Icon">
-                    </a>
+            <div class="project-card" style="background-image: url('images/xver.png');">
+                <div class="project-overlay">
+                    <div class="project-name">XVER IO</div>
+                    <div class="store-icons">
+                        <a href="https://play.google.com/store/apps/details?id=io.xver.app" target="_blank"
+                            rel="noopener noreferrer" class="store-icon" aria-label="Download from Play Store">
+                            <img src="images/play_store.png" alt="Play Store Icon">
+                        </a>
+                        <a href="#" class="store-icon" aria-label="Coming soon to App Store">
+                            <img src="images/app_store.png" alt="App Store Icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" style="background-image: url('images/wander.png');">
+                <div class="project-overlay">
+                    <div class="project-name">Wandermate</div>
+                    <div class="store-icons">
+                        <a href="https://play.google.com/store/apps/details?id=com.ptcp.app.wandermate&hl=en_US"
+                            target="_blank" rel="noopener noreferrer" class="store-icon"
+                            aria-label="Download from Play Store">
+                            <img src="images/play_store.png" alt="Play Store Icon">
+                        </a>
+                        <a href="https://apps.apple.com/pk/app/wandermate/id6445848589" target="_blank"
+                            rel="noopener noreferrer" class="store-icon" aria-label="Download from App Store">
+                            <img src="images/app_store.png" alt="App Store Icon">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
+
 </html>
